@@ -1,0 +1,23 @@
+<script>
+
+function Student(name, energy){
+    this.name = name;
+    this.energy = energy;
+}
+
+Student.prototype.eat = function(portion){
+    this.energy += portion;
+    return `Hello, ${this.name}, enjoy!`;
+}
+
+Student.prototype.play = function(time){
+    this.energy -= time;
+    return `Hello, ${this.name}, have fun!`;
+}
+
+Student.prototype.sleep = function(time){
+    this.energy += time*2;
+    return `Hello, ${this.name}, good night!`;
+}
+let mareta = new Student('Mareta', 10);
+</script>

@@ -1,0 +1,24 @@
+<!-- JavaScript can "display" data in different ways:
+Writing into an HTML element, using innerHTML.
+Writing into the HTML output using document.write().
+Writing into an alert box, using window.alert().
+Writing into the browser console, using console.log(). -->
+
+<!-- To access an HTML element, JavaScript can use the document.getElementById(id) method.
+
+The id attribute defines the HTML element. The innerHTML property defines the HTML content: -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="content"></p>
+    <script>
+        document.getElementById("content").innerHTML = "Hello";
+    </script>
+</body>
+</html>
